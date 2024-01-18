@@ -1,0 +1,581 @@
+--------------------------------------------------------------------------------
+Command:            ./drr_DYN_ARR_SLL
+Massif arguments:   (none)
+ms_print arguments: massif.out.5636
+--------------------------------------------------------------------------------
+
+
+    KB
+760.2^                                                                       #
+     |                                                                      @#
+     |                                                                   @@:@#
+     |                                              @@                 ::@@:@#
+     |                                              @ :               :::@@:@#
+     |                                            @@@ :     :   :::::::::@@:@#
+     |                                           @@ @ :::  ::::@:::: ::::@@:@#
+     |                                           @@ @ :: :@::: @:::: ::::@@:@#
+     |                                          @@@ @ :: :@::: @:::: ::::@@:@#
+     |                                          @@@ @ :: :@::: @:::: ::::@@:@#
+     |                                        @@@@@ @ :: :@::: @:::: ::::@@:@#
+     |                                  @@ :@@@ @@@ @ :: :@::: @:::: ::::@@:@#
+     |                                @:@ ::@ @ @@@ @ :: :@::: @:::: ::::@@:@#
+     |                      @  ::  :::@ @ ::@ @ @@@ @ :: :@::: @:::: ::::@@:@#
+     |                      @::: :::: @ @ ::@ @ @@@ @ :: :@::: @:::: ::::@@:@#
+     |                    @:@: : :::: @ @ ::@ @ @@@ @ :: :@::: @:::: ::::@@:@#
+     |              ::::::@:@: : :::: @ @ ::@ @ @@@ @ :: :@::: @:::: ::::@@:@#
+     |    @@ ::  ::::: :: @:@: : :::: @ @ ::@ @ @@@ @ :: :@::: @:::: ::::@@:@#
+     |    @ :: :@::::: :: @:@: : :::: @ @ ::@ @ @@@ @ :: :@::: @:::: ::::@@:@#
+     |   :@ :: :@::::: :: @:@: : :::: @ @ ::@ @ @@@ @ :: :@::: @:::: ::::@@:@#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   34.42
+
+Number of snapshots: 64
+ Detailed snapshots: [3, 7, 15, 17, 24, 26, 29, 30, 31, 32, 33, 34, 35, 39, 43, 54, 55, 59, 61, 62, 63 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        791,241           24,720           20,616         4,104            0
+  2      1,726,675           72,112           53,092        19,020            0
+  3      2,270,435          137,200           90,912        46,288            0
+66.26% (90,912B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->23.97% (32,880B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->23.83% (32,688B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->23.83% (32,688B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.14% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->20.57% (28,224B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->20.57% (28,224B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->20.57% (28,224B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->20.57% (28,224B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->19.05% (26,136B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->19.05% (26,136B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->02.57% (3,528B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->02.57% (3,528B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.10% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  4      3,168,315           87,496           61,108        26,388            0
+  5      3,697,729          148,544           96,512        52,032            0
+  6      4,544,926          105,064           70,052        35,012            0
+  7      5,286,511          109,128           76,584        32,544            0
+70.18% (76,584B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->38.53% (42,048B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->38.53% (42,048B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->38.53% (42,048B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->38.53% (42,048B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->22.92% (25,008B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->22.92% (25,008B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.82% (5,256B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.82% (5,256B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->03.77% (4,112B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.53% (3,856B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->03.53% (3,856B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.23% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.15% (160B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  8      5,844,984          126,480           91,140        35,340            0
+  9      6,451,020          142,296          103,768        38,528            0
+ 10      6,918,299          154,416          112,228        42,188            0
+ 11      7,399,707          167,784          120,080        47,704            0
+ 12      8,006,159          178,936          128,840        50,096            0
+ 13      8,638,113          183,472          131,480        51,992            0
+ 14      9,198,896          186,336          134,992        51,344            0
+ 15     10,028,032          230,064          166,528        63,536            0
+72.38% (166,528B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->40.98% (94,272B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->40.98% (94,272B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->40.98% (94,272B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->40.98% (94,272B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->18.50% (42,552B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->18.50% (42,552B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->07.73% (17,776B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->07.50% (17,264B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->07.50% (17,264B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.22% (512B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.12% (11,784B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->05.12% (11,784B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.06% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 16     10,727,722          217,560          160,052        57,508            0
+ 17     11,390,304          304,344          210,704        93,640            0
+69.23% (210,704B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->32.30% (98,304B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->32.30% (98,304B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->32.30% (98,304B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->32.30% (98,304B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->20.41% (62,112B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->20.41% (62,112B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->12.44% (37,856B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->12.27% (37,328B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->12.27% (37,328B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.17% (528B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.04% (12,288B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.04% (12,288B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.05% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 18     11,950,717          241,656          172,836        68,820            0
+ 19     12,684,880          280,416          196,028        84,388            0
+ 20     13,567,242          255,088          181,960        73,128            0
+ 21     14,449,901          269,416          192,420        76,996            0
+ 22     14,979,596          291,856          206,184        85,672            0
+ 23     15,508,964          291,112          208,332        82,780            0
+ 24     16,125,950          326,072          230,792        95,280            0
+70.78% (230,792B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->38.45% (125,376B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->38.45% (125,376B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->38.45% (125,376B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->38.45% (125,376B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->21.14% (68,928B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->21.14% (68,928B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->06.34% (20,672B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->06.13% (19,984B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->06.13% (19,984B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.21% (688B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.81% (15,672B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.81% (15,672B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.04% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 25     16,534,345          342,440          239,964       102,476            0
+ 26     17,280,158          370,280          255,512       114,768            0
+69.01% (255,512B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->34.02% (125,952B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->34.02% (125,952B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->34.02% (125,952B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->34.02% (125,952B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->22.60% (83,688B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->22.60% (83,688B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->08.10% (29,984B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->07.91% (29,296B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->07.91% (29,296B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.19% (688B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.25% (15,744B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.25% (15,744B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.04% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 27     18,162,315          342,704          239,820       102,884            0
+ 28     18,868,041          356,360          252,872       103,488            0
+ 29     19,462,429          375,944          268,868       107,076            0
+71.52% (268,868B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->41.11% (154,560B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->41.11% (154,560B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->41.11% (154,560B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->41.11% (154,560B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->21.27% (79,980B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->21.27% (79,980B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->05.14% (19,320B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->05.14% (19,320B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->03.95% (14,848B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.72% (13,984B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->03.72% (13,984B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.23% (864B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.04% (160B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 30     20,391,085          394,488          283,908       110,580            0
+71.97% (283,908B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->42.10% (166,080B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->42.10% (166,080B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->42.10% (166,080B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->42.10% (166,080B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->20.79% (81,996B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->20.79% (81,996B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->05.26% (20,760B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->05.26% (20,760B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->03.78% (14,912B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.54% (13,968B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->03.54% (13,968B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.24% (944B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.04% (160B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 31     21,328,703          484,080          339,028       145,052            0
+70.04% (339,028B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->35.82% (173,376B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->35.82% (173,376B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->35.82% (173,376B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->35.82% (173,376B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->21.11% (102,204B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->21.11% (102,204B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->08.60% (41,632B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->08.40% (40,672B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->08.40% (40,672B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.20% (960B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.48% (21,672B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.48% (21,672B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.03% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 32     21,896,410          548,040          376,188       171,852            0
+68.64% (376,188B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.64% (173,376B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->31.64% (173,376B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->31.64% (173,376B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->31.64% (173,376B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->21.65% (118,644B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->21.65% (118,644B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->11.38% (62,352B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->11.20% (61,392B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->11.20% (61,392B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.18% (960B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.95% (21,672B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.95% (21,672B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.03% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 33     22,353,531          600,480          406,756       193,724            0
+67.74% (406,756B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->28.90% (173,568B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->28.90% (173,568B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->28.90% (173,568B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->28.90% (173,568B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->21.98% (131,988B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->21.98% (131,988B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->13.21% (79,344B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->13.05% (78,368B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->13.05% (78,368B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.16% (976B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.61% (21,696B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.61% (21,696B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.03% (160B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 34     23,065,673          668,952          446,380       222,572            0
+66.73% (446,380B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->25.97% (173,760B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->25.97% (173,760B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->25.97% (173,760B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->25.97% (173,760B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->22.46% (150,228B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->22.46% (150,228B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->15.02% (100,496B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->14.88% (99,536B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->14.88% (99,536B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.14% (960B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.25% (21,720B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.25% (21,720B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.03% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 35     23,451,617          700,152          464,280       235,872            0
+66.31% (464,280B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->24.82% (173,760B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->24.82% (173,760B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->24.82% (173,760B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->24.82% (173,760B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->22.70% (158,928B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->22.70% (158,928B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->15.67% (109,696B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->15.53% (108,736B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->15.53% (108,736B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.14% (960B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.10% (21,720B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.10% (21,720B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.03% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 36     24,244,040          623,904          415,964       207,940            0
+ 37     24,772,691          572,712          383,768       188,944            0
+ 38     25,581,116          509,160          345,380       163,780            0
+ 39     26,109,721          533,184          361,808       171,376            0
+67.86% (361,808B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.85% (180,480B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->33.85% (180,480B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->33.85% (180,480B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->33.85% (180,480B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->25.94% (138,288B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->25.94% (138,288B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.23% (22,560B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.23% (22,560B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->03.81% (20,304B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.62% (19,312B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->03.62% (19,312B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.19% (992B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.03% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 40     26,637,986          574,512          385,644       188,868            0
+ 41     27,166,461          586,704          392,000       194,704            0
+ 42     27,959,292          558,144          375,664       182,480            0
+ 43     28,751,818          563,088          378,620       184,468            0
+67.24% (378,620B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.11% (186,432B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->33.11% (186,432B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->33.11% (186,432B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->33.11% (186,432B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->27.15% (152,868B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->27.15% (152,868B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.14% (23,304B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.14% (23,304B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->02.81% (15,824B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->02.63% (14,816B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->02.63% (14,816B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.18% (1,008B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.03% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 44     29,280,169          617,376          411,848       205,528            0
+ 45     29,808,647          613,768          408,808       204,960            0
+ 46     30,337,183          592,848          399,040       193,808            0
+ 47     30,865,449          604,512          408,284       196,228            0
+ 48     31,657,886          617,400          418,660       198,740            0
+ 49     32,186,271          631,704          430,964       200,740            0
+ 50     32,572,437          646,032          443,364       202,668            0
+ 51     32,958,554          663,336          458,352       204,984            0
+ 52     33,344,593          678,648          471,712       206,936            0
+ 53     33,730,785          691,512          482,832       208,680            0
+ 54     33,955,018          712,152          496,200       215,952            0
+69.68% (496,200B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->37.42% (266,496B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->37.42% (266,496B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->37.42% (266,496B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->37.42% (266,496B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->23.63% (168,312B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->23.63% (168,312B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.68% (33,312B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.68% (33,312B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->03.92% (27,888B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.73% (26,528B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->03.73% (26,528B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.19% (1,360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.03% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 55     34,108,473          730,144          506,764       223,380            0
+69.41% (506,764B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->36.53% (266,688B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->36.53% (266,688B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->36.53% (266,688B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->36.53% (266,688B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->23.66% (172,740B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->23.66% (172,740B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.63% (33,808B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.44% (32,448B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->04.44% (32,448B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.19% (1,360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.57% (33,336B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.57% (33,336B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->00.03% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 56     34,494,445          708,064          494,636       213,428            0
+ 57     34,880,397          721,704          506,492       215,212            0
+ 58     35,266,429          740,952          521,696       219,256            0
+ 59     35,287,597          744,096          523,532       220,564            0
+70.36% (523,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->38.91% (289,536B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->38.91% (289,536B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->38.91% (289,536B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->38.91% (289,536B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->22.90% (170,364B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->22.90% (170,364B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.86% (36,192B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.86% (36,192B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->03.66% (27,248B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.41% (25,344B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->03.41% (25,344B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.26% (1,904B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.03% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 60     35,673,625          746,472          528,244       218,228            0
+ 61     35,744,320          752,544          532,488       220,056            0
+70.76% (532,488B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->39.80% (299,520B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->39.80% (299,520B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->39.80% (299,520B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->39.80% (299,520B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->22.47% (169,128B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->22.47% (169,128B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.98% (37,440B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.98% (37,440B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->03.48% (26,208B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.22% (24,256B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->03.22% (24,256B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.26% (1,952B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.03% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 62     35,966,956          765,888          541,304       224,584            0
+70.68% (541,304B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->39.46% (302,208B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->39.46% (302,208B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->39.46% (302,208B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->39.46% (302,208B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->22.42% (171,720B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->22.42% (171,720B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.93% (37,776B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.93% (37,776B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->03.84% (29,408B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->03.58% (27,440B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->03.58% (27,440B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.26% (1,968B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.03% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 63     36,090,797          778,440          548,576       229,864            0
+70.47% (548,576B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->38.82% (302,208B) 0x401800: cdsl_queue_list_lock_based_pthread_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->38.82% (302,208B) 0x401908: cdsl_sll_init (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   ->38.82% (302,208B) 0x40156C: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|     ->38.82% (302,208B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|       
+->22.48% (175,008B) 0x401454: get_next_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->22.48% (175,008B) 0x40132F: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.85% (37,776B) 0x401533: find_node (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.85% (37,776B) 0x401346: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+|   
+->04.29% (33,408B) 0x401927: cdsl_queue_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| ->04.04% (31,456B) 0x40161D: insert_packet (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| | ->04.04% (31,456B) 0x40135D: main (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/DRR/drr_DYN_ARR_SLL)
+| |   
+| ->00.25% (1,952B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.02% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+

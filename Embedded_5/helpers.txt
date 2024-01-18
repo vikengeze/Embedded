@@ -1,0 +1,19 @@
+1:
+
+-O0 -Wall -o phods_crosstool.out
+
+Compiler directories: 
+
+$HOME/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin
+
+$HOME/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/bin
+
+xtools compiler:
+~/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-gcc
+linaro compiler:
+~/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/bin/arm-linux-gnueabihf-gcc
+
+
+2:
+
+make ARCH=arm CROSS_COMPILE=home/viken/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-oldconfig

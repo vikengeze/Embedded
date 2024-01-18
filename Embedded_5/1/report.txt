@@ -1,0 +1,15 @@
+Q2:
+ldd -v ~/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-gcc
+
+Q3:
+compiled with: 
+~/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-gcc phods.c -O0 -Wall -o phods_crosstool.out
+
+Q4:
+compiled with:
+~/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/bin/arm-linux-gnueabihf-gcc phods.c -O0 -Wall -o phods_linaro.out
+
+Q6:
+~/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-gcc phods.c -O0 -Wall -static -o phods_crosstool_static.out
+
+~/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/bin/arm-linux-gnueabihf-gcc phods.c -O0 -Wall -static -o phods_linaro_static.out

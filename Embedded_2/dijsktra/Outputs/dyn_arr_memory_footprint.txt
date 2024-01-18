@@ -1,0 +1,224 @@
+--------------------------------------------------------------------------------
+Command:            ./dijkstra_dyn_arr input.dat
+Massif arguments:   (none)
+ms_print arguments: massif.out.43622
+--------------------------------------------------------------------------------
+
+
+    KB
+360.6^                                                                       #
+     |                                                                     ::#
+     |                                                                 ::::::#
+     |                                                               :::: :::#
+     |                                                          ::@@@:::: :::#
+     |                                                        ::: @@ :::: :::#
+     |                                                    ::::::: @@ :::: :::#
+     |                                                ::::::: ::: @@ :::: :::#
+     |                                             :::: : ::: ::: @@ :::: :::#
+     |                                         :::::: : : ::: ::: @@ :::: :::#
+     |                                     :::::: ::: : : ::: ::: @@ :::: :::#
+     |                                 :::@: : :: ::: : : ::: ::: @@ :::: :::#
+     |                              ::::: @: : :: ::: : : ::: ::: @@ :::: :::#
+     |                          ::::: ::: @: : :: ::: : : ::: ::: @@ :::: :::#
+     |                        ::: ::: ::: @: : :: ::: : : ::: ::: @@ :::: :::#
+     |                    ::::::: ::: ::: @: : :: ::: : : ::: ::: @@ :::: :::#
+     |                 :::::  ::: ::: ::: @: : :: ::: : : ::: ::: @@ :::: :::#
+     |             ::::: :::  ::: ::: ::: @: : :: ::: : : ::: ::: @@ :::: :::#
+     |         ::::::: : :::  ::: ::: ::: @: : :: ::: : : ::: ::: @@ :::: :::#
+     |       ::: : ::: : :::  ::: ::: ::: @: : :: ::: : : ::: ::: @@ :::: :::#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   93.97
+
+Number of snapshots: 53
+ Detailed snapshots: [3, 24, 40, 41, 52 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        171,162            4,592            4,568            24            0
+  2      7,112,240            4,696            4,656            40            0
+  3      7,288,224           17,480           14,088         3,392            0
+80.59% (14,088B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->35.15% (6,144B) 0x4018A0: cdsl_dyn_array_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dyn_arr)
+| ->35.15% (6,144B) 0x4012F0: enqueue (dijkstra.c:111)
+|   ->35.15% (6,144B) 0x401569: dijkstra (dijkstra.c:170)
+|     ->35.15% (6,144B) 0x40170A: main (dijkstra.c:210)
+|       
+->23.43% (4,096B) 0x4CF7E83: _IO_file_doallocate (filedoalloc.c:101)
+| ->23.43% (4,096B) 0x4D0804F: _IO_doallocbuf (genops.c:347)
+|   ->23.43% (4,096B) 0x4D06E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     ->23.43% (4,096B) 0x4D08105: _IO_default_uflow (genops.c:362)
+|       ->23.43% (4,096B) 0x4CDA3FF: __vfscanf_internal (vfscanf-internal.c:627)
+|         ->23.43% (4,096B) 0x4CD93BC: __isoc99_fscanf (isoc99_fscanf.c:30)
+|           ->23.43% (4,096B) 0x401679: main (dijkstra.c:201)
+|             
+->18.81% (3,288B) 0x401280: enqueue (dijkstra.c:88)
+| ->18.74% (3,276B) 0x401569: dijkstra (dijkstra.c:170)
+| | ->18.74% (3,276B) 0x40170A: main (dijkstra.c:210)
+| |   
+| ->00.07% (12B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.70% (472B) 0x4CF8AAD: __fopen_internal (iofopen.c:65)
+| ->02.70% (472B) 0x4CF8AAD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+|   ->02.70% (472B) 0x401649: main (dijkstra.c:195)
+|     
+->00.50% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  4      9,853,861           20,936           14,788         6,148            0
+  5     11,907,332           27,752           18,196         9,556            0
+  6     13,500,323           40,496           25,076        15,420            0
+  7     16,077,709           45,968           27,812        18,156            0
+  8     18,561,397           58,784           34,220        24,564            0
+  9     19,812,718           60,920           35,288        25,632            0
+ 10     21,493,644           65,912           37,784        28,128            0
+ 11     23,916,605           79,232           44,444        34,788            0
+ 12     26,734,994           87,272           48,464        38,808            0
+ 13     28,615,847           97,520           53,588        43,932            0
+ 14     30,107,562          101,864           55,760        46,104            0
+ 15     32,966,442          115,424           62,540        52,884            0
+ 16     34,813,344          119,456           64,556        54,900            0
+ 17     36,302,137          130,832           70,244        60,588            0
+ 18     38,724,400          135,728           72,692        63,036            0
+ 19     39,866,764          139,640           74,648        64,992            0
+ 20     41,755,114          149,648           79,652        69,996            0
+ 21     44,317,072          160,616           85,136        75,480            0
+ 22     45,921,698          166,304           87,980        78,324            0
+ 23     47,890,276          170,912           90,284        80,628            0
+ 24     50,608,497          184,040           96,848        87,192            0
+52.62% (96,848B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.31% (87,072B) 0x401280: enqueue (dijkstra.c:88)
+| ->47.25% (86,952B) 0x401569: dijkstra (dijkstra.c:170)
+| | ->47.25% (86,952B) 0x40170A: main (dijkstra.c:210)
+| |   
+| ->00.07% (120B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.78% (5,120B) 0x4CF7E83: _IO_file_doallocate (filedoalloc.c:101)
+| ->02.78% (5,120B) 0x4D0804F: _IO_doallocbuf (genops.c:347)
+|   ->02.23% (4,096B) 0x4D06E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->02.23% (4,096B) 0x4D08105: _IO_default_uflow (genops.c:362)
+|   |   ->02.23% (4,096B) 0x4CDA3FF: __vfscanf_internal (vfscanf-internal.c:627)
+|   |     ->02.23% (4,096B) 0x4CD93BC: __isoc99_fscanf (isoc99_fscanf.c:30)
+|   |       ->02.23% (4,096B) 0x401679: main (dijkstra.c:201)
+|   |         
+|   ->00.56% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->02.23% (4,096B) 0x4018A0: cdsl_dyn_array_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dyn_arr)
+| ->02.23% (4,096B) 0x4012F0: enqueue (dijkstra.c:111)
+|   ->02.23% (4,096B) 0x401569: dijkstra (dijkstra.c:170)
+|     ->02.23% (4,096B) 0x40170A: main (dijkstra.c:210)
+|       
+->00.30% (560B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 25     51,984,018          186,104           97,880        88,224            0
+ 26     54,616,809          199,184          104,420        94,764            0
+ 27     56,775,093          204,272          106,964        97,308            0
+ 28     58,352,970          214,256          111,956       102,300            0
+ 29     60,777,455          219,872          114,764       105,108            0
+ 30     62,574,064          233,408          121,532       111,876            0
+ 31     64,117,757          234,920          122,288       112,632            0
+ 32     66,845,740          243,824          126,740       117,084            0
+ 33     68,940,883          254,072          131,864       122,208            0
+ 34     71,584,533          266,888          138,272       128,616            0
+ 35     73,535,008          271,952          140,804       131,148            0
+ 36     74,931,800          275,480          142,568       132,912            0
+ 37     77,115,837          289,160          149,408       139,752            0
+ 38     79,058,316          292,328          150,992       141,336            0
+ 39     80,503,776          303,536          156,596       146,940            0
+ 40     82,722,497          307,712          158,684       149,028            0
+51.57% (158,684B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->48.39% (148,908B) 0x401280: enqueue (dijkstra.c:88)
+| ->48.33% (148,704B) 0x401569: dijkstra (dijkstra.c:170)
+| | ->48.33% (148,704B) 0x40170A: main (dijkstra.c:210)
+| |   
+| ->00.07% (204B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.66% (5,120B) 0x4CF7E83: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.66% (5,120B) 0x4D0804F: _IO_doallocbuf (genops.c:347)
+|   ->01.33% (4,096B) 0x4D06E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->01.33% (4,096B) 0x4D08105: _IO_default_uflow (genops.c:362)
+|   |   ->01.33% (4,096B) 0x4CDA3FF: __vfscanf_internal (vfscanf-internal.c:627)
+|   |     ->01.33% (4,096B) 0x4CD93BC: __isoc99_fscanf (isoc99_fscanf.c:30)
+|   |       ->01.33% (4,096B) 0x401679: main (dijkstra.c:201)
+|   |         
+|   ->00.33% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->01.33% (4,096B) 0x4018A0: cdsl_dyn_array_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dyn_arr)
+| ->01.33% (4,096B) 0x4012F0: enqueue (dijkstra.c:111)
+|   ->01.33% (4,096B) 0x401569: dijkstra (dijkstra.c:170)
+|     ->01.33% (4,096B) 0x40170A: main (dijkstra.c:210)
+|       
+->00.18% (560B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 41     84,679,189          313,208          161,432       151,776            0
+51.54% (161,432B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->48.42% (151,656B) 0x401280: enqueue (dijkstra.c:88)
+| ->48.36% (151,452B) 0x401569: dijkstra (dijkstra.c:170)
+| | ->48.36% (151,452B) 0x40170A: main (dijkstra.c:210)
+| |   
+| ->00.07% (204B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.63% (5,120B) 0x4CF7E83: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.63% (5,120B) 0x4D0804F: _IO_doallocbuf (genops.c:347)
+|   ->01.31% (4,096B) 0x4D06E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->01.31% (4,096B) 0x4D08105: _IO_default_uflow (genops.c:362)
+|   |   ->01.31% (4,096B) 0x4CDA3FF: __vfscanf_internal (vfscanf-internal.c:627)
+|   |     ->01.31% (4,096B) 0x4CD93BC: __isoc99_fscanf (isoc99_fscanf.c:30)
+|   |       ->01.31% (4,096B) 0x401679: main (dijkstra.c:201)
+|   |         
+|   ->00.33% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->01.31% (4,096B) 0x4018A0: cdsl_dyn_array_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dyn_arr)
+| ->01.31% (4,096B) 0x4012F0: enqueue (dijkstra.c:111)
+|   ->01.31% (4,096B) 0x401569: dijkstra (dijkstra.c:170)
+|     ->01.31% (4,096B) 0x40170A: main (dijkstra.c:210)
+|       
+->00.18% (560B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 42     86,417,108          326,360          168,008       158,352            0
+ 43     87,912,102          327,968          168,812       159,156            0
+ 44     90,258,440          336,632          173,144       163,488            0
+ 45     91,457,462          344,528          177,092       167,436            0
+ 46     93,354,076          349,496          179,576       169,920            0
+ 47     95,134,142          360,824          185,240       175,584            0
+ 48     96,687,667          362,840          186,248       176,592            0
+ 49     98,008,284          367,016          188,336       178,680            0
+ 50     98,181,220          368,000          188,828       179,172            0
+ 51     98,360,818          368,384          189,020       179,364            0
+ 52     98,538,327          369,296          189,476       179,820            0
+51.31% (189,476B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->48.66% (179,700B) 0x401280: enqueue (dijkstra.c:88)
+| ->48.60% (179,460B) 0x401569: dijkstra (dijkstra.c:170)
+| | ->48.60% (179,460B) 0x40170A: main (dijkstra.c:210)
+| |   
+| ->00.06% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.39% (5,120B) 0x4CF7E83: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.39% (5,120B) 0x4D0804F: _IO_doallocbuf (genops.c:347)
+|   ->01.11% (4,096B) 0x4D06E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->01.11% (4,096B) 0x4D08105: _IO_default_uflow (genops.c:362)
+|   |   ->01.11% (4,096B) 0x4CDA3FF: __vfscanf_internal (vfscanf-internal.c:627)
+|   |     ->01.11% (4,096B) 0x4CD93BC: __isoc99_fscanf (isoc99_fscanf.c:30)
+|   |       ->01.11% (4,096B) 0x401679: main (dijkstra.c:201)
+|   |         
+|   ->00.28% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->01.11% (4,096B) 0x4018A0: cdsl_dyn_array_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dyn_arr)
+| ->01.11% (4,096B) 0x4012F0: enqueue (dijkstra.c:111)
+|   ->01.11% (4,096B) 0x401569: dijkstra (dijkstra.c:170)
+|     ->01.11% (4,096B) 0x40170A: main (dijkstra.c:210)
+|       
+->00.15% (560B) in 1+ places, all below ms_print's threshold (01.00%)
+

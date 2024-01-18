@@ -1,0 +1,289 @@
+--------------------------------------------------------------------------------
+Command:            ./dijkstra_dll input.dat
+Massif arguments:   (none)
+ms_print arguments: massif.out.43252
+--------------------------------------------------------------------------------
+
+
+    KB
+941.7^                                                                       #
+     |                                                                     @:#
+     |                                                                 ::::@:#
+     |                                                               ::: : @:#
+     |                                                           ::::::: : @:#
+     |                                                        ::::: :::: : @:#
+     |                                                     :::::::: :::: : @:#
+     |                                                 :::::: ::::: :::: : @:#
+     |                                               :@:: ::: ::::: :::: : @:#
+     |                                           :::::@:: ::: ::::: :::: : @:#
+     |                                       @@::::: :@:: ::: ::::: :::: : @:#
+     |                                     ::@ ::::: :@:: ::: ::::: :::: : @:#
+     |                                 @:::::@ ::::: :@:: ::: ::::: :::: : @:#
+     |                             ::::@:: ::@ ::::: :@:: ::: ::::: :::: : @:#
+     |                           ::: ::@:: ::@ ::::: :@:: ::: ::::: :::: : @:#
+     |                       ::::::: ::@:: ::@ ::::: :@:: ::: ::::: :::: : @:#
+     |                    :::::: ::: ::@:: ::@ ::::: :@:: ::: ::::: :::: : @:#
+     |                :::::: ::: ::: ::@:: ::@ ::::: :@:: ::: ::::: :::: : @:#
+     |             @@:: : :: ::: ::: ::@:: ::@ ::::: :@:: ::: ::::: :::: : @:#
+     |            :@ :: : :: ::: ::: ::@:: ::@ ::::: :@:: ::: ::::: :::: : @:#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   61.84
+
+Number of snapshots: 61
+ Detailed snapshots: [4, 6, 20, 25, 32, 49, 59, 60 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        171,060            4,592            4,568            24            0
+  2      7,112,159            4,824            4,784            40            0
+  3      8,193,657           32,600           20,408        12,192            0
+  4      9,361,743           46,808           28,400        18,408            0
+60.67% (28,400B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.58% (15,720B) 0x402B6D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dll)
+| ->33.58% (15,720B) 0x4013C0: enqueue (dijkstra.c:111)
+|   ->33.53% (15,696B) 0x40163C: dijkstra (dijkstra.c:170)
+|   | ->33.53% (15,696B) 0x4017DD: main (dijkstra.c:210)
+|   |   
+|   ->00.05% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->16.82% (7,872B) 0x401350: enqueue (dijkstra.c:88)
+| ->16.79% (7,860B) 0x40163C: dijkstra (dijkstra.c:170)
+| | ->16.79% (7,860B) 0x4017DD: main (dijkstra.c:210)
+| |   
+| ->00.03% (12B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->08.75% (4,096B) 0x4CF7E83: _IO_file_doallocate (filedoalloc.c:101)
+| ->08.75% (4,096B) 0x4D0804F: _IO_doallocbuf (genops.c:347)
+|   ->08.75% (4,096B) 0x4D06E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     ->08.75% (4,096B) 0x4D08105: _IO_default_uflow (genops.c:362)
+|       ->08.75% (4,096B) 0x4CDA3FF: __vfscanf_internal (vfscanf-internal.c:627)
+|         ->08.75% (4,096B) 0x4CD93BC: __isoc99_fscanf (isoc99_fscanf.c:30)
+|           ->08.75% (4,096B) 0x40174C: main (dijkstra.c:201)
+|             
+->01.01% (472B) 0x4CF8AAD: __fopen_internal (iofopen.c:65)
+| ->01.01% (472B) 0x4CF8AAD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+|   ->01.01% (472B) 0x40171C: main (dijkstra.c:195)
+|     
+->00.51% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  5     10,983,764           87,328           51,636        35,692            0
+  6     12,476,289          100,768           59,196        41,572            0
+58.74% (59,196B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->35.30% (35,568B) 0x402B6D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dll)
+| ->35.30% (35,568B) 0x4013C0: enqueue (dijkstra.c:111)
+|   ->35.25% (35,520B) 0x40163C: dijkstra (dijkstra.c:170)
+|   | ->35.25% (35,520B) 0x4017DD: main (dijkstra.c:210)
+|   |   
+|   ->00.05% (48B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->17.66% (17,796B) 0x401350: enqueue (dijkstra.c:88)
+| ->17.64% (17,772B) 0x40163C: dijkstra (dijkstra.c:170)
+| | ->17.64% (17,772B) 0x4017DD: main (dijkstra.c:210)
+| |   
+| ->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.08% (5,120B) 0x4CF7E83: _IO_file_doallocate (filedoalloc.c:101)
+| ->05.08% (5,120B) 0x4D0804F: _IO_doallocbuf (genops.c:347)
+|   ->04.06% (4,096B) 0x4D06E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->04.06% (4,096B) 0x4D08105: _IO_default_uflow (genops.c:362)
+|   |   ->04.06% (4,096B) 0x4CDA3FF: __vfscanf_internal (vfscanf-internal.c:627)
+|   |     ->04.06% (4,096B) 0x4CD93BC: __isoc99_fscanf (isoc99_fscanf.c:30)
+|   |       ->04.06% (4,096B) 0x40174C: main (dijkstra.c:201)
+|   |         
+|   ->01.02% (1,024B) 0x4D070AF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|     ->01.02% (1,024B) 0x4D05834: _IO_new_file_xsputn (fileops.c:1244)
+|       ->01.02% (1,024B) 0x4D05834: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|         ->01.02% (1,024B) 0x4CECAF1: __vfprintf_internal (vfprintf-internal.c:1373)
+|           ->01.02% (1,024B) 0x4CD7EBE: printf (printf.c:33)
+|             ->01.02% (1,024B) 0x401684: dijkstra (dijkstra.c:176)
+|               ->01.02% (1,024B) 0x4017DD: main (dijkstra.c:210)
+|                 
+->00.71% (712B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  7     14,099,894          136,224           79,140        57,084            0
+  8     15,260,739          145,952           84,612        61,340            0
+  9     16,614,039          164,896           95,268        69,628            0
+ 10     18,272,241          197,792          113,772        84,020            0
+ 11     19,405,205          211,040          121,224        89,816            0
+ 12     21,063,693          244,192          139,872       104,320            0
+ 13     22,233,929          259,040          148,224       110,816            0
+ 14     23,357,390          287,264          164,100       123,164            0
+ 15     24,899,173          302,368          172,596       129,772            0
+ 16     25,997,860          332,064          189,300       142,764            0
+ 17     26,910,553          340,896          194,268       146,628            0
+ 18     28,140,602          355,040          202,224       152,816            0
+ 19     28,919,238          378,528          215,436       163,092            0
+ 20     30,181,946          390,816          222,348       168,468            0
+56.89% (222,348B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->36.93% (144,336B) 0x402B6D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dll)
+| ->36.93% (144,336B) 0x4013C0: enqueue (dijkstra.c:111)
+|   ->36.88% (144,144B) 0x40163C: dijkstra (dijkstra.c:170)
+|   | ->36.88% (144,144B) 0x4017DD: main (dijkstra.c:210)
+|   |   
+|   ->00.05% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->18.47% (72,180B) 0x401350: enqueue (dijkstra.c:88)
+| ->18.44% (72,084B) 0x40163C: dijkstra (dijkstra.c:170)
+| | ->18.44% (72,084B) 0x4017DD: main (dijkstra.c:210)
+| |   
+| ->00.02% (96B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.31% (5,120B) 0x4CF7E83: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.31% (5,120B) 0x4D0804F: _IO_doallocbuf (genops.c:347)
+|   ->01.05% (4,096B) 0x4D06E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->01.05% (4,096B) 0x4D08105: _IO_default_uflow (genops.c:362)
+|   |   ->01.05% (4,096B) 0x4CDA3FF: __vfscanf_internal (vfscanf-internal.c:627)
+|   |     ->01.05% (4,096B) 0x4CD93BC: __isoc99_fscanf (isoc99_fscanf.c:30)
+|   |       ->01.05% (4,096B) 0x40174C: main (dijkstra.c:201)
+|   |         
+|   ->00.26% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.18% (712B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 21     31,452,585          422,624          240,240       182,384            0
+ 22     32,403,965          430,944          244,920       186,024            0
+ 23     33,472,668          461,408          262,056       199,352            0
+ 24     34,563,978          471,712          267,852       203,860            0
+ 25     35,920,150          484,768          275,196       209,572            0
+56.77% (275,196B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->37.04% (179,568B) 0x402B6D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dll)
+| ->37.04% (179,568B) 0x4013C0: enqueue (dijkstra.c:111)
+|   ->36.99% (179,328B) 0x40163C: dijkstra (dijkstra.c:170)
+|   | ->36.99% (179,328B) 0x4017DD: main (dijkstra.c:210)
+|   |   
+|   ->00.05% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->18.52% (89,796B) 0x401350: enqueue (dijkstra.c:88)
+| ->18.50% (89,676B) 0x40163C: dijkstra (dijkstra.c:170)
+| | ->18.50% (89,676B) 0x4017DD: main (dijkstra.c:210)
+| |   
+| ->00.02% (120B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.06% (5,120B) 0x4CF7E83: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.06% (5,120B) 0x4D0804F: _IO_doallocbuf (genops.c:347)
+|   ->01.06% (5,120B) in 2 places, all below massif's threshold (1.00%)
+|     
+->00.15% (712B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 26     37,025,048          512,736          290,928       221,808            0
+ 27     38,275,778          524,512          297,552       226,960            0
+ 28     39,282,752          550,880          312,384       238,496            0
+ 29     40,039,987          559,584          317,280       242,304            0
+ 30     41,266,758          574,496          325,668       248,828            0
+ 31     42,977,803          609,888          345,576       264,312            0
+ 32     43,721,261          617,120          349,644       267,476            0
+56.66% (349,644B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->37.14% (229,200B) 0x402B6D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dll)
+| ->37.14% (229,200B) 0x4013C0: enqueue (dijkstra.c:111)
+|   ->37.09% (228,888B) 0x40163C: dijkstra (dijkstra.c:170)
+|   | ->37.09% (228,888B) 0x4017DD: main (dijkstra.c:210)
+|   |   
+|   ->00.05% (312B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->18.57% (114,612B) 0x401350: enqueue (dijkstra.c:88)
+| ->18.55% (114,456B) 0x40163C: dijkstra (dijkstra.c:170)
+| | ->18.55% (114,456B) 0x4017DD: main (dijkstra.c:210)
+| |   
+| ->00.03% (156B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.95% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 33     44,769,682          634,912          359,652       275,260            0
+ 34     45,701,719          656,992          372,072       284,920            0
+ 35     46,892,427          669,216          378,948       290,268            0
+ 36     48,238,267          698,848          395,616       303,232            0
+ 37     49,223,589          710,560          402,204       308,356            0
+ 38     50,640,632          735,904          416,460       319,444            0
+ 39     51,607,013          754,016          426,648       327,368            0
+ 40     52,753,377          764,512          432,552       331,960            0
+ 41     53,849,905          792,416          448,248       344,168            0
+ 42     54,734,020          802,336          453,828       348,508            0
+ 43     55,993,043          818,720          463,044       355,676            0
+ 44     56,862,242          847,328          479,136       368,192            0
+ 45     58,250,386          859,104          485,760       373,344            0
+ 46     59,309,374          873,696          493,968       379,728            0
+ 47     60,810,694          906,400          512,364       394,036            0
+ 48     62,269,518          935,328          528,636       406,692            0
+ 49     62,899,231          942,752          532,812       409,940            0
+56.52% (532,812B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->37.26% (351,312B) 0x402B6D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dll)
+| ->37.26% (351,312B) 0x4013C0: enqueue (dijkstra.c:111)
+|   ->37.21% (350,832B) 0x40163C: dijkstra (dijkstra.c:170)
+|   | ->37.21% (350,832B) 0x4017DD: main (dijkstra.c:210)
+|   |   
+|   ->00.05% (480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->18.63% (175,668B) 0x401350: enqueue (dijkstra.c:88)
+| ->18.61% (175,428B) 0x40163C: dijkstra (dijkstra.c:170)
+| | ->18.61% (175,428B) 0x4017DD: main (dijkstra.c:210)
+| |   
+| ->00.03% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.62% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 50     63,074,419          944,416          533,748       410,668            0
+ 51     63,258,544          945,376          534,288       411,088            0
+ 52     63,430,969          947,936          535,728       412,208            0
+ 53     63,614,701          949,856          536,808       413,048            0
+ 54     63,789,855          951,968          537,996       413,972            0
+ 55     63,969,329          954,464          539,400       415,064            0
+ 56     64,141,110          956,320          540,444       415,876            0
+ 57     64,322,273          957,792          541,272       416,520            0
+ 58     64,498,855          960,800          542,964       417,836            0
+ 59     64,675,032          961,952          543,612       418,340            0
+56.51% (543,612B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->37.27% (358,512B) 0x402B6D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dll)
+| ->37.27% (358,512B) 0x4013C0: enqueue (dijkstra.c:111)
+|   ->37.22% (358,032B) 0x40163C: dijkstra (dijkstra.c:170)
+|   | ->37.22% (358,032B) 0x4017DD: main (dijkstra.c:210)
+|   |   
+|   ->00.05% (480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->18.64% (179,268B) 0x401350: enqueue (dijkstra.c:88)
+| ->18.61% (179,028B) 0x40163C: dijkstra (dijkstra.c:170)
+| | ->18.61% (179,028B) 0x4017DD: main (dijkstra.c:210)
+| |   
+| ->00.02% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.61% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 60     64,840,209          964,296          544,932       419,364            0
+56.51% (544,932B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->37.27% (359,400B) 0x402B6D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/viken/Desktop/Ενσωματωμενα/Lab_2/dijsktra/dijkstra_dll)
+| ->37.27% (359,400B) 0x4013C0: enqueue (dijkstra.c:111)
+|   ->37.22% (358,920B) 0x40163C: dijkstra (dijkstra.c:170)
+|   | ->37.22% (358,920B) 0x4017DD: main (dijkstra.c:210)
+|   |   
+|   ->00.05% (480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->18.64% (179,700B) 0x401350: enqueue (dijkstra.c:88)
+| ->18.61% (179,460B) 0x40163C: dijkstra (dijkstra.c:170)
+| | ->18.61% (179,460B) 0x4017DD: main (dijkstra.c:210)
+| |   
+| ->00.02% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.60% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+

@@ -1,0 +1,3 @@
+Minimum: 3942
+Maximum: 19159
+Mean: 4381.79

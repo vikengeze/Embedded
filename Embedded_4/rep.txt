@@ -1,0 +1,9 @@
+Χωρις αλλαγές έτρεξε στο zybo:
+Hardware cycles : 683010
+Software cycles : 1475360
+Speed-Up        : 2.16009
+
+Μετά την βελτιστοποίηση:
+Hardware cycles : 11430
+Software cycles : 1475214
+Speed-Up        : 129.065
